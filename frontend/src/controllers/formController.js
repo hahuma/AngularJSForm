@@ -4,7 +4,7 @@ function registerController($scope, $http){
     userInformation = $scope.userInformation;
 
     $scope.sendInfoAndClear = function(userInformation){
-
+         //essa chamada http deve ser utilizada apenas durante desenvolvimento, essa URL não conrresponde a de uma API real
         $http.post('http://localhost:3333/cadastro', userInformation)
             .then(response => {
 

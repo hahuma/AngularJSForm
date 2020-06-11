@@ -1,0 +1,41 @@
+<div class="form-div" ng-init="console.log($location)">
+    <h1>Realize o seu cadastro de maneira rápida</h1>
+    <form
+    novalidate
+    class="form-container"
+    >
+        <label for="name">Seu Nome:</label>
+        <input
+        type="text"
+        ng-model="userInformation.name"
+        placeholder="ex: Rodrigo"
+        required
+        >
+
+        <label for="phoneNumber">Seu Número:
+            <span>Com parênteses e hífen</span>
+        </label>
+        <input
+        type="tel"
+        pattern="[(]\d{2}[)]\d{4,5}[-]\d{4}"
+        title="(99)99999-9999"
+        ng-model="userInformation.phoneNumber"
+        placeholder="(XX)XXXXX-XXXX"
+        required
+        >
+
+        <label for="age">Sua Idade:
+            <span>Entre 18 a 100 anos de idade</span>
+        </label>
+        <input type="number"
+        ng-model="userInformation.age"
+        placeholder="ex: 32"
+        minlength="2"
+        maxlength="3"
+        size="3"
+        required
+        >{{userInformation}}
+
+        <button ng-click='sendInfoAndClear(userInformation)' type="submit">Cadastrar</button>
+    </form>
+</div>

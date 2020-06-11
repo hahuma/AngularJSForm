@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif, Arial;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0efef;
+}
+
+.button-container {
+    width: 30px;
+    height: 90vh;
+    position: absolute;
+    right: 4px;
+}
+
+.button-container button {
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    background-color: #12db12;
+}
+
+.button-container button i {
+    border: solid #FFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 8px;
+    width: 360px;
+    height: 450px;
+    padding: 15px;
+    box-shadow:  4px 8px  8px #666565ab;
+}
+
+.form-div h1{
+    text-align: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.form-container label{
+    font-weight: 600;
+    font-family: Oswald, sans-serif, Arial;
+}
+
+.form-container label span {
+    bottom: 2px;
+    position: relative;
+    left: 20px;
+    color: #b9b7b7;
+    font-size: smaller;
+}
+
+.form-container input{
+    margin: 5px 0;
+    padding: 10px 10px;
+    border-bottom: 2px solid rgba(182, 178, 178, 0.582);
+    border-radius: 2px;
+}
+
+.form-container button{
+    width: 300px;
+    height: 80px;
+    margin-top: 15px;
+    background-color: #13ec13;
+    border-radius: 8px;
+    align-self: center;
+    color: #FFF;
+    font-family: Oswald, sans-serif, Arial;
+    font-weight: 700;
+    font-size: xx-large;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #13df13;
+}
+
+.database-div{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 10px;
+    width: 90vw;
+    height: 90vh;
+    padding: 15px;
+    box-shadow:  4px 8px  8px #666565ab;
+    align-items: center;
+    overflow: scroll;
+}
+
+.database-container h1{
+    font-family: Oswald, Roboto, Sans-serif, Helvetica;
+    text-align: center;
+    position: static;
+}
+
+.database-container {
+    width: 1000px;
+    height: 1000px;
+}
+
+.database-container ul {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 4px;
+    grid-row-gap: 10px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.database-container ul li {
+    width: 225px;
+    height: 150px;
+    margin: 2px 2px;
+    padding: 2px 10px;
+    border-radius: 15px;
+    background-color: #00000007;
+    box-shadow: 0 0 6px #0000001f;
+}
+
+.database-container ul li div p {
+    margin: 4px 4px 2px;
+    font-family:  Sans-serif, Helvetica;;
+}
+
+
+.database-container ul li div h4{
+    font-family: Oswald, Roboto, Sans-serif, Helvetica;
+    font-size: medium;
+    color: #000000b9;
+}

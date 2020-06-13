@@ -12,11 +12,11 @@ const mainApp = angular.module('mainApp',['ngRoute'])
 const routeConfig = ($routeProvider, $locationProvider) => {
     $routeProvider
     .when('/', {
-        templateUrl: 'components/formComponent.html',
+        templateUrl: 'src/components/formComponent.html',
         controller: 'form-controller'
     })
     .when('/database', {
-        templateUrl: 'components/databaseComponent.html',
+        templateUrl: 'src/components/databaseComponent.html',
         controller: 'database-controller'
     })
     .otherwise({
